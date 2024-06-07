@@ -1,0 +1,11 @@
+//Componentes
+@use './components/navContainer';
+@use './components/footerContainer';
+
+//Pages
+@use './pages/home';
+@use './index.scss';
+
+
+//Resets
+@use './resets/resets';
