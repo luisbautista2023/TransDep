@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import './styles/styles.scss'
 
 import Nosotros from "./pages/Nosotros";
 import Home from "./pages/Home";
@@ -6,11 +7,8 @@ import Contacto from "./pages/Contacto";
 import NuestrosServicios from "./pages/NuestrosServicios";
 import Layout from "./components/Layout";
 
-import './styles/styles.scss'
-
-
-
 function App() {
+  
   return (
     <>
       <Routes>

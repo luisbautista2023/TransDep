@@ -1,11 +1,12 @@
-//Componentes
-@use './components/navContainer';
-@use './components/footerContainer';
-
-//Pages
-@use './pages/home';
-@use './index.scss';
-
+//Media queries
+@import './media-queries';
 
 //Resets
-@use './resets/resets';
+@import './resets/resets';
+
+//Componentes
+@import './components/navContainer';
+@import './components/footerContainer';
+
+//Pages
+@import './pages/home';

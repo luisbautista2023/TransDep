@@ -1,22 +1,20 @@
 import React from "react";
 import logo2 from "../assets/img/logo.png";
+import video from "../assets/img/video-trans.mp4";
+
 
 const Home = () => {
   return (
     <>
       <div className="home-container">
-        <section id="sect1" class="sect">
-          <video
-            src="https://videos.pexels.com/video-files/6331328/6331328-hd_1366_720_24fps.mp4"
-            autoplay="true"
-            muted="true"
-            loop="true"
-            poster=""
-          ></video>
-        </section>
-        <img className="home-logo2" src={logo2} alt="" />
+        <video className="videoBg" src={video} autoPlay loop muted />
+
+        <section id="sect1" className="sect"></section>
+
+        <img className="home-logo2" src={logo2} alt="logo" />
+
         <div className="home-slogan">
-          <p><h3>TRANSDEP</h3> ESPECIAL DE COLOMBIA S.A.S.</p>
+          <h3 className="parrafo1">TRANSDEP ESPECIAL DE COLOMBIA S.A.S.</h3>
         </div>
         <div className="home-text">
           <p>
