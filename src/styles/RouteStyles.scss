@@ -1,0 +1,17 @@
+//Media queries
+// @use './media-queries';
+
+//Resets
+@use './resets/resets';
+
+//Componentes
+@use '../components/NavBar/navContainer';
+@use '../components/Footer/footerContainer';
+@use '../pages/Inicio/components/HomeBody/homeBody';
+@use '../pages/Inicio/components/HomeSecction/homeSection';
+
+//Pages
+@use '../pages/inicio/inicio';
+
+//Variables
+@use '../variables/colores.scss'

@@ -1,0 +1,160 @@
+@import "../../../../styles/media-queries";
+
+$color-primary: #3adbc6;
+$color-blanco: #ffff;
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-content: center;
+  height: 100vh;
+  padding: 10px 45px;
+  display: block;
+  margin-bottom: 15px;
+
+  @include xs {
+    height: 80vh;
+  }
+  @include xxl {
+    height: 100vh;
+  }
+
+  .abstract {
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+
+  .home-logo2 {
+    width: 80px;
+
+    @include xs {
+      visibility: hidden;
+      position: absolute;
+    }
+    @include sm {
+      visibility: visible;
+      position: relative;
+    }
+  }
+  .videoBg {
+    position: fixed;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .home-slogan {
+    display: flex;
+
+    .parrafo1{
+      font-size: 6rem;
+      width: 60%;
+      box-sizing: border-box;
+      font-weight: 700;
+      color: $color-blanco;
+      
+      span {
+        font-size: 6rem;
+        width: 60%;
+        box-sizing: border-box;
+        font-weight: 700;
+        color: $color-primary;
+
+        @include xs {
+          font-size: 3rem;
+          width: 100%;
+        }
+        @include sm {
+          font-size: 3rem;
+        }
+  
+        @include md {
+          font-size: 4rem;
+          width: 92%;
+        }
+        @include lg {
+          font-size: 4rem;
+          width: 80%;
+        }
+  
+        @include xl {
+          font-size: 5rem;
+        }
+        @include xxl {
+          font-size: 6rem;
+          width: 70%;
+        }
+      }
+
+      @include xs {
+        font-size: 3rem;
+        width: 100%;
+      }
+      @include sm {
+        font-size: 3rem;
+      }
+
+      @include md {
+        font-size: 4rem;
+        width: 92%;
+      }
+      @include lg {
+        font-size: 4rem;
+        width: 80%;
+      }
+
+      @include xl {
+        font-size: 5rem;
+      }
+      @include xxl {
+        font-size: 6rem;
+        width: 70%;
+      }
+    }
+    .imgCoches {
+      width: 400px;
+    }
+  }
+
+  .home-text h4 {
+    font-size: 2rem;
+    width: 60%;
+    // border: 1px solid yellow;
+    font-weight: 500;
+    box-sizing: border-box;
+    color: $color-blanco;
+
+    @include xs {
+      font-size: 2rem;
+      width: 100%;
+    }
+    @include sm {
+      font-size: 2rem;
+    }
+    @include md {
+      font-size: 2.5rem;
+      width: 80%;
+    }
+    @include lg {
+      font-size: 2rem;
+      width: 60%;
+    }
+
+    @include xl {
+      font-size: 3rem;
+    }
+    @include xxl {
+      font-size: 3rem;
+      width: 60%;
+    }
+  }
+}
