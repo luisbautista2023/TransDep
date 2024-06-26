@@ -1,8 +1,6 @@
 import logo2 from "../../../../assets/img/logo.png";
-// import coches from "../../../../assets/img/coches.png";
 import abstractImg from "../../../../assets/img/abstract.svg";
 import video from "../../../../assets/img/video-trans.mp4";
-import HomeSectionCaracteristicas from "../HomeSecction/HomeSections";
 
 const HomeBody = () => {
   return (
@@ -20,7 +18,7 @@ const HomeBody = () => {
 
         <div className="home-text">
           <h4>
-            Somos una empresa colombiana de Transporte Terrestre Automotor de
+            Somos una Empresa Colombiana de Transporte Terrestre Automotor de
             Servicio Especial.
           </h4>
         </div>
