@@ -9,6 +9,8 @@
 @use '../components/Footer/footerContainer';
 @use '../pages/Inicio/components/HomeBody/homeBody';
 @use '../pages/Inicio/components/HomeSecction/homeSection';
+@use '../pages//Inicio/components/HomeServicioEspecial/homeServicios';
+@use '../pages/Inicio/components/HomeVentajasCompetitivas/h-ventajas-competitivas';
 
 //Pages
 @use '../pages/inicio/inicio';
