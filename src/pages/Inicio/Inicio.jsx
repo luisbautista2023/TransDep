@@ -6,10 +6,13 @@ import HVentajasCompetitivas from "./components/HomeVentajasCompetitivas/HVentaj
 const Inicio = () => {
   return (
     <>
-      <HomeBody />
-      <HomeSectionCaracteristicas />
-      <HomeServicios />;
-      <HVentajasCompetitivas/>
+    <div className="container-inicio">
+      <HomeBody className="home"/>
+      <HomeSectionCaracteristicas className="home" />
+      <HomeServicios className="home"/>;
+      <HVentajasCompetitivas className="home"/>
+
+    </div>
     </>
   );
 };

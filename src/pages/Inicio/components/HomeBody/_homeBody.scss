@@ -13,11 +13,8 @@ $color-blanco: #ffff;
   display: block;
   margin-bottom: 15px;
 
-  @include xs {
+  @include mobile {
     height: 80vh;
-  }
-  @include xxl {
-    height: 100vh;
   }
 
   .abstract {
@@ -33,13 +30,11 @@ $color-blanco: #ffff;
   .home-logo2 {
     width: 80px;
 
-    @include xs {
-      visibility: hidden;
-      position: absolute;
+    @include mobile{
+      width: 50px;
     }
-    @include sm {
-      visibility: visible;
-      position: relative;
+    @include tablet{
+      width: 50px;
     }
   }
   .videoBg {
@@ -52,110 +47,67 @@ $color-blanco: #ffff;
     z-index: -1;
   }
 
-  .home-slogan {
+  .home-slogan1 {
     display: flex;
     margin-bottom: 20px;
 
-    .parrafo1{
+    .parrafo1 {
       font-size: 6rem;
-      width: 60%;
+      width: 100%;
       box-sizing: border-box;
       font-weight: 700;
       color: $color-blanco;
+
+      @include mobile {
+        font-size: 40px;
+      }
+      @include tablet {
+        font-size: 40px;
+      }
+      @include desktop {
+        font-size: 5rem;
+      }
       
       span {
         font-size: 6rem;
-        width: 60%;
         box-sizing: border-box;
         font-weight: 700;
         color: $color-primary;
-
-        @include xs {
-          font-size: 3rem;
-          width: 100%;
+        
+        @include mobile {
+          font-size: 40px;
         }
-        @include sm {
-          font-size: 3rem;
+        @include tablet {
+          font-size: 40px;
         }
-  
-        @include md {
-          font-size: 4rem;
-          width: 92%;
-        }
-        @include lg {
-          font-size: 4rem;
-          width: 80%;
-        }
-  
-        @include xl {
+        @include desktop {
           font-size: 5rem;
         }
-        @include xxl {
-          font-size: 6rem;
-          width: 70%;
-        }
       }
-
-      @include xs {
-        font-size: 3rem;
-        width: 100%;
-      }
-      @include sm {
-        font-size: 3rem;
-      }
-
-      @include md {
-        font-size: 4rem;
-        width: 92%;
-      }
-      @include lg {
-        font-size: 4rem;
-        width: 80%;
-      }
-
-      @include xl {
-        font-size: 5rem;
-      }
-      @include xxl {
-        font-size: 6rem;
-        width: 70%;
-      }
-    }
-    .imgCoches {
-      width: 400px;
     }
   }
 
-  .home-text h4 {
+  .home-slogan2 {
     font-size: 2rem;
-    width: 60%;
-    // border: 1px solid yellow;
-    font-weight: 500;
+    width: 100%;
     box-sizing: border-box;
     color: $color-blanco;
 
-    @include xs {
-      font-size: 2rem;
-      width: 100%;
-    }
-    @include sm {
-      font-size: 2rem;
-    }
-    @include md {
-      font-size: 2.5rem;
-      width: 80%;
-    }
-    @include lg {
-      font-size: 2rem;
-      width: 60%;
-    }
+    .slogan2-child {
+      font-size: 4rem;
+      font-weight: 300;
 
-    @include xl {
-      font-size: 3rem;
-    }
-    @include xxl {
-      font-size: 3rem;
-      width: 60%;
+      @include mobile {
+        font-size: 30px;
+        width: 100%;
+      }
+      @include tablet {
+        font-size: 30px;
+        width: 100%;
+      }
+      @include desktop {
+        font-size: 2.8rem;
+      }
     }
   }
 }

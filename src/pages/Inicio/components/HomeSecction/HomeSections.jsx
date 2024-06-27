@@ -10,26 +10,17 @@ const HomeSectionCaracteristicas = () => {
   return (
     <>
       <div className="contain-caracteristicas">
-        <div className="imagen-container">
-          <img
-            src={AutosServicios}
-            alt="servicios"
-            className="imagenAutos"
+        <div className="todos-background">
+          <div className="fondo-1"></div>
+          <div className="fondo2"></div>
+          <div
+            className="fondo3"
             data-aos="fade-left"
             data-aos-offset="500"
             data-aos-easing="ease-in-sine"
             data-aos-duratiom="3000"
-          />
+          ></div>
         </div>
-        <div className="fondo-1"></div>
-        <div className="fondo2"></div>
-        <div
-          className="fondo3"
-          data-aos="fade-left"
-          data-aos-offset="500"
-          data-aos-easing="ease-in-sine"
-          data-aos-duratiom="3000"
-        ></div>
 
         <div className="parrafo-container">
           <h1
@@ -43,9 +34,25 @@ const HomeSectionCaracteristicas = () => {
           </h1>
 
           <div className="tarjeta" data-aos="flip-left">
-            <img className="img-turismo" src="https://images.pexels.com/photos/33488/navigation-car-drive-road.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-            <h2>ESTAMOS LISTOS PARA SU VIAJE</h2>
+            <img
+              className="img-turismo"
+              src="https://images.pexels.com/photos/33488/navigation-car-drive-road.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <h2 className="text-tarjeta">ESTAMOS LISTOS PARA SU VIAJE</h2>
           </div>
+        </div>
+
+        <div className="imagen-container">
+          <img
+            src={AutosServicios}
+            alt="servicios"
+            className="imagenAutos"
+            data-aos="fade-left"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine"
+            data-aos-duratiom="3000"
+          />
         </div>
       </div>
     </>
