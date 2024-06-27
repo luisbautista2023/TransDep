@@ -6,13 +6,13 @@ const Navbar = () => {
     <>
       <div className="nav-container">
         <div className="nav-logo">
-          <Link className="logo-inicio" to='/'>
+          <Link className="logo-inicio" to="/">
             <img src={logoTrasnDep} alt="Logo" />
           </Link>
         </div>
         <div className="nav-link">
           <Link className="link" to="/">
-          <i className="bi bi-house-door"></i> Inicio
+            <i className="bi bi-house-door"></i> Inicio
           </Link>
           <Link className="link" to="nosotros">
             Nosotros

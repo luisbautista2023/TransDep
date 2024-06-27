@@ -12,69 +12,35 @@ $color-primary: #3adbc6;
   margin: 15px auto;
   align-items: center;
   padding: 10px 30px;
-  margin-bottom: 6px;
   box-shadow: 0 0 8px 0.5px rgba(139, 139, 145, 0.832);
   background-color: #ffffff;
   z-index: 1;
 
-  @include xs {
-    //  align-self: center ;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  @include md {
-    
-  }
-  @include lg {
-    
-  }
-  @include xl {
-    //  align-self: center ;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-  @include xxl {
-    //  align-self: center ;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-
-  .nav-logo{
+  .nav-logo {
     img {
       width: 110px;
-      transition: 5ms  ease all;
+      transition: 5ms ease all;
 
+      @include mobile {
+        width: 80px;
+      }
+      @include tablet {
+        width: 80px;
+        transition: all 1s ease;
+      }
     }
-
   }
   .nav-link {
     display: flex;
     gap: 35px;
 
-    @include xs {
-      // display: none;
-      visibility: hidden;
-      position: absolute;
+    @include mobile {
+      flex-wrap: wrap;
+      display: none;
     }
-
-    @include md {
-    }
-    @include lg {
-      // background-color: #3adbc6;
-      
-    }
-
-    @include xl {
-      visibility: visible;
-      position: relative;
-    }
-    
-    @include xxl {
-      visibility: visible;
-      position: relative;
+    @include tablet {
+      flex-wrap: wrap;
+      display: none;
     }
 
     .link {

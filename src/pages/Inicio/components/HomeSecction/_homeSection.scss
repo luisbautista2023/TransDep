@@ -1,17 +1,115 @@
+@import "../../../../styles/media-queries";
+
+//Variables
 $col-verde: #61b83e;
-$col-texto: rgb(50, 46, 46);
+$col-texto: rgb(76, 78, 81);
+$col-azul: #377ee8;
+$col-verde2: #046661;
 
 .contain-caracteristicas {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  margin-top: 50px;
   width: 100%;
-  height: 100vh;
+  height: auto;
   position: relative;
   background-color: white;
   z-index: -1;
   overflow: hidden;
+
+  .parrafo-container {
+    position: relative;
+    display: block;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    .promo {
+      position: absolute;
+      left: 50px;
+      top: 90px;
+      font-weight: 900;
+      font-size: 65px;
+      color: $col-texto;
+      box-sizing: border-box;
+      padding: 30px;
+      width: 50%;
+      text-shadow: 0px 0px 15px rgba(249, 249, 249, 0.584);
+
+      @include mobile {
+        font-size: 30px;
+        width: 100%;
+        left: 10px;
+        top: 120px;
+      }
+      @include tablet {
+        font-size: 50px;
+        width: 100%;
+        left: 10px;
+        top: 50px;
+      }
+
+      span {
+        font-weight: 900;
+        font-size: 70px;
+        color: $col-texto;
+        border: 3px solid rgb(13, 186, 157);
+        color: white;
+        border-radius: 50px;
+        padding: 0px 20px;
+
+        @include mobile {
+          font-size: 30px;
+         
+        }
+        @include tablet {
+          font-size: 60px;
+        }
+      }
+    }
+    .tarjeta {
+      display: flex;
+      
+      align-items: center;
+      position: absolute;
+      top: 440px;
+      left: 300px;
+      z-index: 1;
+      width: 30%;
+      height: 32%;
+      text-align: center;
+      border-radius: 20px;
+      font-size: 1.5rem;
+      border: 8px solid rgb(118, 126, 128);
+      overflow: hidden;
+      background-color: $col-verde2;
+
+      @include mobile {
+        top: 500px;
+        left: 10;
+        width: 80%;
+        background-color: $col-verde;
+      }
+      @include tablet {
+        top: 300px;
+        left: 70px;
+        width: 80%;
+        height: 40%;
+        background-color: $col-verde;
+      }
+
+      .img-turismo {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+      }
+      h2 {
+        font-weight: 500;
+        color: white;
+      }
+    }
+  }
 
   .fondo-1 {
     position: absolute;
@@ -22,28 +120,6 @@ $col-texto: rgb(50, 46, 46);
     background: radial-gradient(#a8ea8e, $col-verde);
     border-radius: 0 0 80% 0;
     z-index: -1;
-
-    .parrafo-container {
-      border: 1px solid black;
-      position: absolute;
-      width: 80%;
-      right: 0;
-      top: 200px;
-      margin-top: 10px;
-      height: 200px;
-
-      .promo {
-        position: absolute;
-        left: 0;
-        top: 0;
-        font-weight: 900;
-        font-size: 60px;
-        color: $col-texto;
-        box-sizing: border-box;
-
-        display: block;
-      }
-    }
   }
   .fondo2 {
     position: absolute;
@@ -60,16 +136,29 @@ $col-texto: rgb(50, 46, 46);
     right: 0px;
     width: 25%;
     height: 0;
-    background: radial-gradient(#377ee8, $col-verde);
     border-right: 0px solid transparent;
     border-left: 300px solid transparent;
     border-bottom: solid 100vh $col-verde;
     z-index: -1;
   }
-  .imagenAutos {
+  .imagen-container {
     position: absolute;
+    display: flex;
+    align-items: center;
+    right: -30px;
     width: 55%;
-    right: 0;
-    z-index: 1;
+
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+
+    .imagenAutos {
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
   }
 }
