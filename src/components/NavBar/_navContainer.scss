@@ -1,0 +1,59 @@
+@import "../../styles/media-queries";
+
+$color-primary: #3adbc6;
+
+.nav-container {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  position: static;
+  width: 95%;
+  border-radius: 8px;
+  margin: 15px auto;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0 0 8px 0.5px rgba(139, 139, 145, 0.832);
+  background-color: #ffffff;
+  z-index: 1;
+
+  .nav-logo {
+    img {
+      width: 110px;
+      transition: 5ms ease all;
+
+      @include mobile {
+        width: 80px;
+      }
+      @include tablet {
+        width: 80px;
+        transition: all 1s ease;
+      }
+    }
+  }
+  .nav-link {
+    display: flex;
+    gap: 35px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      display: none;
+    }
+    @include tablet {
+      flex-wrap: wrap;
+      display: none;
+    }
+
+    .link {
+      justify-content: end;
+      text-decoration: none;
+      color: rgb(56, 65, 79);
+      font-weight: bolder;
+      font-size: larger;
+
+      &:hover,
+      :checked {
+        color: $color-primary;
+      }
+    }
+  }
+}

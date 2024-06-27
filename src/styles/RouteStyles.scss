@@ -1,0 +1,19 @@
+//Media queries
+// @use './media-queries';
+
+//Resets
+@use './resets/resets';
+
+//Componentes
+@use '../components/NavBar/navContainer';
+@use '../components/Footer/footerContainer';
+@use '../pages/Inicio/components/HomeBody/homeBody';
+@use '../pages/Inicio/components/HomeSecction/homeSection';
+@use '../pages//Inicio/components/HomeServicioEspecial/homeServicios';
+@use '../pages/Inicio/components/HomeVentajasCompetitivas/h-ventajas-competitivas';
+
+//Pages
+@use '../pages/Inicio/inicio';
+
+//Variables
+@use '../variables/colores.scss'

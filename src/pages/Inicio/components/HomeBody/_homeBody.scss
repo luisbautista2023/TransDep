@@ -1,0 +1,113 @@
+@import "../../../../styles/media-queries";
+
+$color-primary: #3adbc6;
+$color-blanco: #ffff;
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-content: center;
+  height: 100vh;
+  padding: 10px 45px;
+  display: block;
+  margin-bottom: 15px;
+
+  @include mobile {
+    height: 80vh;
+  }
+
+  .abstract {
+    position: fixed;
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+
+  .home-logo2 {
+    width: 80px;
+
+    @include mobile{
+      width: 50px;
+    }
+    @include tablet{
+      width: 50px;
+    }
+  }
+  .videoBg {
+    position: fixed;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .home-slogan1 {
+    display: flex;
+    margin-bottom: 20px;
+
+    .parrafo1 {
+      font-size: 6rem;
+      width: 100%;
+      box-sizing: border-box;
+      font-weight: 700;
+      color: $color-blanco;
+
+      @include mobile {
+        font-size: 40px;
+      }
+      @include tablet {
+        font-size: 40px;
+      }
+      @include desktop {
+        font-size: 5rem;
+      }
+      
+      span {
+        font-size: 6rem;
+        box-sizing: border-box;
+        font-weight: 700;
+        color: $color-primary;
+        
+        @include mobile {
+          font-size: 40px;
+        }
+        @include tablet {
+          font-size: 40px;
+        }
+        @include desktop {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+
+  .home-slogan2 {
+    font-size: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    color: $color-blanco;
+
+    .slogan2-child {
+      font-size: 4rem;
+      font-weight: 300;
+
+      @include mobile {
+        font-size: 30px;
+        width: 100%;
+      }
+      @include tablet {
+        font-size: 30px;
+        width: 100%;
+      }
+      @include desktop {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}
