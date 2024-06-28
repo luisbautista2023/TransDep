@@ -10,6 +10,7 @@ const Navbar = () => {
             <img src={logoTrasnDep} alt="Logo" />
           </Link>
         </div>
+        
         <div className="nav-link">
           <Link className="link" to="/">
             <i className="bi bi-house-door"></i> Inicio
@@ -23,6 +24,7 @@ const Navbar = () => {
           <Link className="link" to="nuestro servicio">
             Nuestro Servicio
           </Link>
+
         </div>
       </div>
     </>

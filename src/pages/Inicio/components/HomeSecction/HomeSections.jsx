@@ -33,7 +33,7 @@ const HomeSectionCaracteristicas = () => {
             CONTAMOS CON UN <span>AMPLIO</span> PARQUE AUTOMOTOR
           </h1>
 
-          <div className="tarjeta" data-aos="flip-left">
+          <div className="tarjeta" data-aos="flip-left" data-aos-offset="200">
             <img
               className="img-turismo"
               src="https://images.pexels.com/photos/33488/navigation-car-drive-road.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

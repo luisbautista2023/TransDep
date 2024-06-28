@@ -12,6 +12,10 @@
     flex-wrap: wrap;
     position: relative;
     z-index: 1;
+    @include large {
+        gap: 15px;
+        
+    }
 
     .imgCarretera{
         position: absolute;
@@ -33,13 +37,17 @@
     padding: 0 15px;
     gap: 15px;
     box-shadow: 0 0 12px .2px #80808096 ;
-    width: 220px;
-    height: 350px;
+    width: 185px;
+    height: 330px;
     overflow: hidden;
     border-radius: 15px;
     background-color: white;
     z-index: -1;
     
+    @include large {
+        // width: 200px;
+        
+    }
     .target-header{
         overflow: hidden;
         
@@ -51,7 +59,7 @@
     }
     .target-body{
         color: rgb(57, 57, 57);
-        font-size: 15px;
+        font-size: 12px;
         text-align: center;
         h2{
             font-weight: 400;

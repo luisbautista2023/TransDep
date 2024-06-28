@@ -1,14 +1,10 @@
 $breakpoints: (
-  // "xs": 0,
-  // "sm": 576px,
-  // "md": 768px,
-  // "lg": 992px,
-  // "xl": 1200px,
-  // "xxl": 1600px,
+
   "mobile": 576px,
   "tablet": 768px,
   "desktop": 992,
   "large": 1200,
+  "extraLarge": 1500,
 );
 
 
@@ -29,6 +25,11 @@ $breakpoints: (
 }
 @mixin large {
   @media screen and (min-width: 993px) and (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin extralarge {
+  @media screen and (min-width: 1201px) and (max-width: 1920px) {
     @content;
   }
 }
