@@ -1,3 +1,5 @@
+@import "../../../../styles/media-queries";
+
 $col-verde: #34be82;
 
 .ventajas-container {
@@ -17,11 +19,23 @@ $col-verde: #34be82;
     box-sizing: border-box;
     padding: 0 30px;
     height: 100%;
-    width: 30%;
+    width: 35%;
     border-radius: 0 50% 50% 0;
+
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      // display: none;
+      width: 40%;
+    }
 
     .HV-parrafo-logo {
       height: 40%;
+      width: 50%;
 
       .logo-solo {
         width: 50px;
@@ -31,26 +45,44 @@ $col-verde: #34be82;
         font-size: 20px;
         color: white;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 20px;
       }
     }
-    .texto2 {
-      color: white;
-      font-weight: 600;
-      font-size: 55px;
-      margin-top: -50px;
+    .HV-parrafo2{
+      width: 50%;
+      .texto2 {
+        color: white;
+        font-weight: 600;
+        font-size: 4rem;
+        margin-top: -50px;
+
+        @include desktop{
+          font-size: 3rem;
+        }
+        @include large{
+          font-size: 3rem;
+        }
+      }
     }
   }
 
   .HV-lista-tarjetas {
     box-sizing: border-box;
-
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-right: 50px;
     gap: 20px;
+
+    @include mobile {
+      margin-right: 0;
+      gap: 2px;
+    }
+    @include tablet {
+      margin-right: 0;
+      gap: 2px;
+    }
 
     .HV-tarjeta {
       display: flex;
@@ -60,6 +92,13 @@ $col-verde: #34be82;
       overflow: hidden;
       margin-bottom: 10px;
       width: 90%;
+
+      @include mobile {
+        width: 100%;
+      }
+      @include tablet {
+        width: 100%;
+      }
     }
     .img-target {
       width: 100px;

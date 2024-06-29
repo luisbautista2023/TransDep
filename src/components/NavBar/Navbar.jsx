@@ -1,19 +1,38 @@
 import { Link } from "react-router-dom";
+import { BsList, BsFillHouseFill } from "react-icons/bs";
 import logoTrasnDep from "../../assets/img/Logo_Act.jpg";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isClose, setIsClose] = useState(false)
+
+
+  console.log(isOpen)
   return (
     <>
-      <div className="nav-container">
+      <div className={`nav-container ${isOpen && "open"} `}>
         <div className="nav-logo">
           <Link className="logo-inicio" to="/">
             <img src={logoTrasnDep} alt="Logo" />
           </Link>
         </div>
-        
+
+        {/* LABEL PARA MENU HAMBURGUESA */}
+        <label
+          className="label-burguer"
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        >
+          <BsList className="label-burguer" />
+        </label>
+
+        {/* ******************************************************** */}
+
         <div className="nav-link">
-          <Link className="link" to="/">
-            <i className="bi bi-house-door"></i> Inicio
+          <Link onClick={()=>{setIsClose(!isClose)}} className= {`link ${isClose && "close"}`}  to="/">
+            <BsFillHouseFill /> Inicio
           </Link>
           <Link className="link" to="nosotros">
             Nosotros
@@ -24,7 +43,6 @@ const Navbar = () => {
           <Link className="link" to="nuestro servicio">
             Nuestro Servicio
           </Link>
-
         </div>
       </div>
     </>
