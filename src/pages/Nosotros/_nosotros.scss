@@ -1,0 +1,122 @@
+@import "../../styles/media-queries";
+
+.nosotros-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .nosotros-imgen-container {
+      position: absolute;
+      width: 100%;
+      
+      @include large {
+    }
+    @include extralarge {
+      height: 100vh;
+      
+    }
+
+    .img-nosotros {
+      filter: brightness(0.3);
+
+      object-fit: cover;
+      width: 100%;
+      height: 900px;
+
+      @include extralarge {
+        object-fit: cover;
+        width: 100%;
+        height: 900px;
+      }
+    }
+  }
+
+  //   CONTAINER DEL TEXTO Y TITULO
+
+  .nosotros-container-parrafo {
+    position: absolute;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    color: white;
+
+    @include tablet {
+      max-width: 60%;
+    }
+    @include desktop {
+      max-width: 60%;
+    }
+    @include large {
+      max-width: 60%;
+    }
+    @include extralarge {
+      max-width: 60%;
+    }
+
+    .nosotros-titulo {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 500;
+
+      @include large {
+        font-size: 4rem;
+      }
+      @include extralarge {
+        font-size: 4rem;
+      }
+    }
+
+    .nosotros-texto {
+      text-align: justify;
+      box-sizing: border-box;
+      padding: 30px;
+      font-size: 1.2rem;
+      font-weight: 300;
+      max-width: 100%;
+
+      @include large {
+        font-size: 1.6rem;
+      }
+      @include extralarge {
+        font-size: 2rem;
+      }
+
+      p {
+        font-weight: 500;
+        color: rgb(67, 210, 160);
+      }
+    }
+
+    .logo-verde {
+      width: 20%;
+
+      @include mobile {
+        display: none;
+      }
+      @include tablet {
+        position: absolute;
+        left: 500px;
+        width: 40%;
+      }
+      @include desktop {
+        position: absolute;
+        left: 650px;
+        width: 30%;
+      }
+      @include large {
+        position: absolute;
+        left: 800px;
+        width: 30%;
+      }
+      @include extralarge {
+        position: absolute;
+        left: 1200px;
+        width: 20%;
+      }
+    }
+  }
+}
