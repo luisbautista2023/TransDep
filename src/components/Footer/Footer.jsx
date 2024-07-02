@@ -3,6 +3,7 @@ import face from "../../assets/img/redes/facebook.png";
 import x from "../../assets/img/redes/x.png";
 import instagram from "../../assets/img/redes/instagram.png";
 import youtube from "../../assets/img/redes/youtube.png";
+import { BsSignpostSplit, BsFillCloudSunFill, BsFillTelephoneFill  } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const FooterAct = () => {
@@ -17,10 +18,10 @@ const FooterAct = () => {
           />
           <div className="section-cards">
             <img className="logo-cmpleto" src={logoTodo} alt="logoCompleto" />
-            <h3 className="direccion">Calle 47 #30A - 48 Urb Curinca</h3>
-            <h3 className="direccion">SANTA MARTA COLOMBIA</h3>
+            <h3 className="direccion"><BsSignpostSplit/> Calle 47 #30A - 48 Urb Curinca</h3>
+            <h3 className="direccion"><BsFillCloudSunFill /> SANTA MARTA COLOMBIA</h3>
             <h3 className="contact-telefono">
-              <span className="contact">CONTACTO ➡</span>314 286 1661 - 310
+              <span   className="contact"> <BsFillTelephoneFill/> CONTACTO ➡</span>314 286 1661 - 310
               5120491
             </h3>
           </div>

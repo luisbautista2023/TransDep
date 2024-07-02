@@ -1,0 +1,38 @@
+.mision-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  border: 4px solid red;
+
+  .container-fondos {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid green;
+    // background-color: rgb(47, 203, 47);
+    overflow: hidden;
+     
+    .ilustra01 {
+        // object-fit: contain;
+        width: 100%;
+        height: 100%;
+   
+    }
+  
+  }
+
+  .mision-secciones {
+    .seccion-titulo-parrafo {
+      .mision-titulo {
+      }
+
+      .mision-parrafo {
+      }
+    }
+
+    .seccion-imagen {
+      .img-mision {
+      }
+    }
+  }
+}

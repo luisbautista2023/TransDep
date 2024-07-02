@@ -1,7 +1,9 @@
+import Valores from "./components/valores/Valores";
+
 import fondoNosotros from "../../assets/img/nosotros.jpg";
 import logo from "../../assets/img/logo.png";
 
-const Nosotros = () => {
+function Nosotros() {
   return (
     <>
       <div className="nosotros-container">
@@ -13,7 +15,7 @@ const Nosotros = () => {
           />
         </div>
         <div className="nosotros-container-parrafo">
-          <h1 className="nosotros-titulo">Nosotros</h1>
+          <h1 className="nosotros-titulo">NOSOTROS</h1>
           <div className="nosotros-texto">
             <p>TRANSDEP ESPECIAL DE COLOMBIA S.A.S</p> Somos una empresa
             especializada en transporte de personal comprometida con la
@@ -27,8 +29,13 @@ const Nosotros = () => {
           <img src={logo} alt="" className="logo-verde" />
         </div>
       </div>
+
+      {/* COMPONENTES DE VALORES */}
+      <Valores />
+
+      {/* COMPONENTES DE MISION Y VISION */}
     </>
   );
-};
+}
 
 export default Nosotros;
