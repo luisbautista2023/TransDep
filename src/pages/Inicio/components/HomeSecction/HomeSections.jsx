@@ -16,7 +16,7 @@ const HomeSectionCaracteristicas = () => {
           <div
             className="fondo3"
             data-aos="fade-left"
-            data-aos-offset="500"
+            data-aos-offset="100"
             data-aos-easing="ease-in-sine"
             data-aos-duratiom="3000"
           ></div>
@@ -26,7 +26,7 @@ const HomeSectionCaracteristicas = () => {
           <h1
             className="promo"
             data-aos="fade-up"
-            data-aos-offset="200"
+            data-aos-offset="100"
             data-aos-easing="ease-in-sine"
             data-aos-duratiom="1000"
           >
@@ -54,7 +54,7 @@ const HomeSectionCaracteristicas = () => {
             alt="servicios"
             className="imagenAutos"
             data-aos="fade-left"
-            data-aos-offset="800"
+            data-aos-offset="100"
             // data-aos-easing="ease-in-sine"
             data-aos-duratiom="3000"
           />
