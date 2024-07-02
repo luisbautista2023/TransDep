@@ -159,7 +159,7 @@ $col-verde2: #046661;
       @include large {
         width: 320px;
         position: absolute;
-        transition: all 4s ease;
+        // transition: all 4s ease;
         top: 300px;
         left: 480px;
         z-index: 2;
@@ -168,7 +168,7 @@ $col-verde2: #046661;
       @include extralarge {
         width: 520px;
         position: absolute;
-        transition: all 4s ease;
+        // transition: all 4s ease;
         top: 390px;
         left: 480px;
         z-index: 2;

@@ -33,7 +33,12 @@ const HomeSectionCaracteristicas = () => {
             CONTAMOS CON UN <span>AMPLIO</span> PARQUE AUTOMOTOR
           </h1>
 
-          <div className="tarjeta" data-aos="flip-left" data-aos-offset="300">
+          <div
+            className="tarjeta"
+            data-aos="flip-left"
+            data-aos-offset="100"
+            data-aos-duration="2000"
+          >
             <img
               className="img-turismo"
               src="https://images.pexels.com/photos/33488/navigation-car-drive-road.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -50,7 +55,7 @@ const HomeSectionCaracteristicas = () => {
             className="imagenAutos"
             data-aos="fade-left"
             data-aos-offset="800"
-            data-aos-easing="ease-in-sine"
+            // data-aos-easing="ease-in-sine"
             data-aos-duratiom="3000"
           />
         </div>
