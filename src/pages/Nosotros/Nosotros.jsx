@@ -15,8 +15,8 @@ function Nosotros() {
           />
         </div>
         <div className="nosotros-container-parrafo">
-          <h1 className="nosotros-titulo">NOSOTROS</h1>
           <div className="nosotros-texto">
+            <h1 className="nosotros-titulo">NOSOTROS</h1>
             <p>TRANSDEP ESPECIAL DE COLOMBIA S.A.S</p> Somos una empresa
             especializada en transporte de personal comprometida con la
             seguridad, comodidad y eficiencia. Nuestra misión es proporcionar
@@ -26,7 +26,11 @@ function Nosotros() {
             orientado a optimizar la experiencia de transporte para cada uno de
             nuestros pasajeros.
           </div>
-          <img src={logo} alt="" className="logo-verde" />
+          <div className="logo-verde-caja">
+            <img src={logo} alt="" className="logo-verde1" />
+            <img src={logo} alt="" className="logo-verde2" />
+            <img src={logo} alt="" className="logo-verde3" />
+          </div>
         </div>
       </div>
 

@@ -6,116 +6,207 @@
   overflow: hidden;
   position: relative;
 
+  // IMAGEN DE FONDO********************
   .nosotros-imgen-container {
-      position: absolute;
+    position: absolute;
+    width: 100%;
+
+    @include mobile {
       width: 100%;
-      
-      @include large {
     }
-    @include extralarge {
-      height: 100vh;
-      
+    @include tablet {
     }
+    // @include large {
+    // }
+    // @include extralarge {
+    //   height: 100vh;
+    // }
 
     .img-nosotros {
       filter: brightness(0.3);
-
       object-fit: cover;
       width: 100%;
       height: 900px;
+      position: absolute;
 
-      @include extralarge {
-        object-fit: cover;
-        width: 100%;
-        height: 900px;
-      }
+      // @include extralarge {
+      //   object-fit: cover;
+      //   width: 100%;
+      //   height: 900px;
+      // }
     }
   }
+  //*********************************************
 
   //   CONTAINER DEL TEXTO Y TITULO
 
   .nosotros-container-parrafo {
     position: absolute;
     height: 100vh;
-    max-width: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 8px;
+    align-items: center;
     color: white;
 
+    @include mobile {
+      width: 100%;
+    }
+
     @include tablet {
-      max-width: 60%;
+      width: 160%;
+      border: 1px solid white;
     }
     @include desktop {
-      max-width: 60%;
+      width: 100%;
+      border: 1px solid white;
     }
-    @include large {
-      max-width: 60%;
-    }
-    @include extralarge {
-      max-width: 60%;
-    }
-
-    .nosotros-titulo {
-      text-align: center;
-      font-size: 2.5rem;
-      font-weight: 500;
-
-      @include large {
-        font-size: 4rem;
-      }
-      @include extralarge {
-        font-size: 4rem;
-      }
-    }
+    // @include large {
+    //   // max-width: 60%;
+    // }
+    // @include extralarge {
+    //   // max-width: 60%;
+    // }
 
     .nosotros-texto {
       text-align: justify;
       box-sizing: border-box;
       padding: 30px;
-      font-size: 1.2rem;
+      font-size: 2rem;
       font-weight: 300;
-      max-width: 100%;
+      width: 60%;
 
-      @include large {
-        font-size: 1.6rem;
+      @include mobile {
+        min-width: 100%;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
-      @include extralarge {
-        font-size: 2rem;
+      @include tablet {
+        width: 65%;
+        font-size: 1.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      @include desktop {
+        width: 60%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      @include large {
+        width: 60%;
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
 
       p {
         font-weight: 500;
         color: rgb(67, 210, 160);
       }
+
+      .nosotros-titulo {
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 500;
+        margin-bottom: 40px;
+
+        @include mobile {
+          font-size: 3rem;
+          width: 80%;
+        }
+        @include tablet {
+          font-size: 3rem;
+          width: 100%;
+        }
+        @include desktop {
+          font-size: 4rem;
+          width: 100%;
+        }
+        @include large {
+          font-size: 5rem;
+          width: 100%;
+        }
+
+        // @include large {
+        //   font-size: 4rem;
+        // }
+        // @include extralarge {
+        //   font-size: 5rem;
+        // }
+      }
     }
 
-    .logo-verde {
-      width: 20%;
+    // CONTENEDOR DEL LOGO SOLO
+    .logo-verde-caja {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      @include mobile {
-        display: none;
-      }
-      @include tablet {
+      width: 40%;
+      height: 100%;
+      position: relative;
+
+      .logo-verde1 {
+        width: 60%;
         position: absolute;
-        left: 500px;
-        width: 40%;
+
+        @include mobile {
+          display: none;
+        }
+        @include tablet {
+          display: none;
+        }
+        @include desktop {
+          // display: none;
+        }
+        @include large {
+          // display: none;
+        }
+
+        // @include desktop {
+        //   position: absolute;
+        //   left: 650px;
+        //   width: 30%;
+        // }
+        // @include large {
+        //   position: absolute;
+        //   left: 800px;
+        //   width: 30%;
+        // }
+        // @include extralarge {
+        //   position: absolute;
+        //   left: 1100px;
+        //   width: 30%;
+        //   border: 1px solid red;
+        // }
       }
-      @include desktop {
+      .logo-verde2 {
+        width: 50%;
         position: absolute;
-        left: 650px;
-        width: 30%;
+        left: 80px;
+        top: 290px;
+        filter: opacity(0.2);
+
+        @include tablet {
+          display: none;
+        }
       }
-      @include large {
+      .logo-verde3 {
+        width: 90%;
         position: absolute;
-        left: 800px;
-        width: 30%;
-      }
-      @include extralarge {
-        position: absolute;
-        left: 1200px;
-        width: 20%;
+        left: 50px;
+        top: -50px;
+        filter: opacity(0.2);
+
+        @include tablet {
+          display: none;
+        }
       }
     }
   }
