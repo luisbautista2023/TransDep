@@ -6,6 +6,7 @@ import Contacto from "./pages/Contacto/Contacto";
 import NuestrosServicios from "./pages/NuestrosServicios/NuestrosServicios";
 import Layout from "./layouts/Layout";
 import "./styles/RouteStyles.scss";
+import Pagina404 from "./pages/404/Pagina404";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/nuestro servicio" element={<NuestrosServicios />} />
-          <Route path="*" element={<h1> pagina 404 </h1>} />
+          <Route path="*" element={<Pagina404/>} />
         </Route>
       </Routes>
     </>

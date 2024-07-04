@@ -14,7 +14,6 @@ $color-primary: #3adbc6;
   padding: 10px 30px;
   box-shadow: 0 0 8px 0.5px rgba(139, 139, 145, 0.832);
   background-color: #ffffff;
-  
 
   &.nav-container.open {
     @include mobile {
@@ -61,6 +60,15 @@ $color-primary: #3adbc6;
     }
   }
 
+  .btn-burguer.burgerX  ~ .nav-link{
+      @include mobile{
+        display: none;
+        background-color: #3adbc6;
+      }
+    }
+    
+  
+
   .nav-logo {
     img {
       width: 80px;
@@ -89,24 +97,26 @@ $color-primary: #3adbc6;
       box-sizing: border-box;
       align-items: center;
       position: absolute;
-      top: 110px;
-      left: 8px;
-      width: 95%;
-      height: 60vh;
+      top: 80px;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      gap: 0;
     }
     @include tablet {
       // display: none;
-      background-color: #ebf0ef;
+      // display: none;
+      background-color: #e5e8e8;
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
       align-items: center;
       position: absolute;
-      top: 120px;
-      left: 20px;
-      margin: auto 5px;
-      width: 90%;
-      height: 60vh;
+      top: 80px;
+      left: -15px;
+      right: 0;
+      width: 120%;
+      height: 100vh;
       translate: 0px 0px -80% 50%;
     }
 
@@ -117,8 +127,6 @@ $color-primary: #3adbc6;
       font-weight: bolder;
       font-size: larger;
 
-      
-
       @include mobile {
         border-bottom: 1px solid rgba(128, 128, 128, 0.502);
         font-size: 25px;
@@ -126,6 +134,7 @@ $color-primary: #3adbc6;
         height: 70px;
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 10px;
       }
       @include tablet {
