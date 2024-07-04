@@ -5,10 +5,13 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isClose, setIsClose] = useState(false)
+  const [isClose, setIsClose] = useState(true);
 
+  const openMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-  console.log(isOpen)
+  console.log(isOpen);
   return (
     <>
       <div className={`nav-container ${isOpen && "open"} `}>
@@ -19,19 +22,20 @@ const Navbar = () => {
         </div>
 
         {/* LABEL PARA MENU HAMBURGUESA */}
-        <label
-          className="label-burguer"
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
-        >
-          <BsList className="label-burguer" />
+        <label className="label-burguer" onClick={openMenu}>
+          <BsList className={`btn-burguer ${isOpen && "burgerX"}`} />
         </label>
 
         {/* ******************************************************** */}
 
         <div className="nav-link">
-          <Link onClick={()=>{setIsClose(!isClose)}} className= {`link ${isClose && "close"}`}  to="/">
+          <Link
+            onClick={() => {
+              setIsClose(!isClose);
+            }}
+            className={`link ${isClose && "close"}`}
+            to="/"
+          >
             <BsFillHouseFill /> Inicio
           </Link>
           <Link className="link" to="nosotros">
