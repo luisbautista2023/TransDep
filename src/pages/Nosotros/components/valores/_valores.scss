@@ -20,6 +20,9 @@
     display: contents;
     
   }
+  @include large {
+
+  }
 
 
   .valores-container-fondos {
@@ -30,7 +33,7 @@
     height: 100vh;
     width: 90%;
     box-sizing: border-box;
-    padding: 30px;
+    // padding: 30px;
     
 
     @include mobile {
@@ -42,6 +45,10 @@
     }
     @include desktop {
       height: 20%;
+      
+    }
+    @include large {
+      // height: 100vh;
       
     }
 
@@ -181,7 +188,6 @@
     gap: 20px;
     padding: 20px;
     flex-wrap: wrap;
-    border: 1px solid red;
 // display: none;
     @include mobile {
       display: flex;
