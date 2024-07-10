@@ -17,20 +17,24 @@ $color-primary: #3adbc6;
 
   &.nav-container.open {
     @include mobile {
+      position: absolute;
       overflow: visible;
       z-index: 2;
     }
     @include tablet {
+      position: absolute;
       overflow: visible;
       z-index: 2;
     }
   }
 
   @include mobile {
-    position: fixed;
+    position: absolute;
     z-index: 100;
+    width: 100%;
     align-content: center;
-    left: 15px;
+    left: 0px;
+    top: 1000;
     overflow: hidden;
     transition: 3s all ease;
   }
@@ -40,34 +44,24 @@ $color-primary: #3adbc6;
     align-content: center;
     left: 15px;
     overflow: hidden;
+    width: 96%;
   }
-
-  .label-burguer {
-    font-size: 40px;
-
-    @include mobile {
-    }
-    @include tablet {
-    }
-    @include desktop {
-      display: none;
-    }
-    @include large {
-      display: none;
-    }
-    @include extralarge {
-      display: none;
-    }
+  @include desktop {
+    position: fixed;
+    z-index: 100;
+    align-content: center;
+    left: 15px;
+    overflow: hidden;
+    width: 97%;
   }
-
-  .btn-burguer.burgerX  ~ .nav-link{
-      @include mobile{
-        display: none;
-        background-color: #3adbc6;
-      }
-    }
-    
-  
+  @include large {
+    position: fixed;
+    z-index: 100;
+    align-content: center;
+    left: 15px;
+    overflow: hidden;
+    width: 97%;
+  }
 
   .nav-logo {
     img {
@@ -105,7 +99,6 @@ $color-primary: #3adbc6;
     }
     @include tablet {
       // display: none;
-      // display: none;
       background-color: #e5e8e8;
       display: flex;
       flex-direction: column;
@@ -113,11 +106,10 @@ $color-primary: #3adbc6;
       align-items: center;
       position: absolute;
       top: 80px;
-      left: -15px;
       right: 0;
-      width: 120%;
+      width: 100%;
       height: 100vh;
-      translate: 0px 0px -80% 50%;
+      gap: 0;
     }
 
     .link {
@@ -139,7 +131,7 @@ $color-primary: #3adbc6;
       }
       @include tablet {
         border-bottom: 1px solid rgba(128, 128, 128, 0.502);
-        font-size: 40px;
+        font-size: 25px;
         width: 100%;
         padding: 15px;
         display: flex;
