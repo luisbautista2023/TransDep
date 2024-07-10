@@ -2,49 +2,54 @@ import { Link } from "react-router-dom";
 import { BsList, BsFillHouseFill } from "react-icons/bs";
 import logoTrasnDep from "../../assets/img/Logo_Act.jpg";
 import { useState } from "react";
+import BtnBurger from "./components/BtnBurger";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isClose, setIsClose] = useState(true);
+  const [clicked, setClicked] = useState(false);
+  const [close, setClose] = useState(true);
+  const [modal, setModal] = useState(true)
 
-  const openMenu = () => {
-    setIsOpen(!isOpen);
+  const handleClick = () => {
+    setClicked(!clicked);
+    setClose(!close);
+    console.log("estado clicked: ", close)
   };
+  
+  const clickCerrarModal = () => {
+    setModal(modal);
+    console.log("estado modal= " + modal)
 
-  console.log(isOpen);
+  }
+
   return (
     <>
-      <div className={`nav-container ${isOpen && "open"} `}>
+      <div className={`nav-container ${clicked ? "open"  : "" &&  `${modal ? "modalClose" : ""}`}`}>
         <div className="nav-logo">
           <Link className="logo-inicio" to="/">
             <img src={logoTrasnDep} alt="Logo" />
           </Link>
         </div>
 
-        {/* LABEL PARA MENU HAMBURGUESA */}
-        <label className="label-burguer" onClick={openMenu}>
-          <BsList className={`btn-burguer ${isOpen && "burgerX"}`} />
-        </label>
+        {/* MENU HAMBURGUESA */}
+        <BtnBurger
+          clicked={clicked}
+          close={close}
+          handleClick={handleClick}
+        />
 
         {/* ******************************************************** */}
 
         <div className="nav-link">
-          <Link
-            onClick={() => {
-              setIsClose(!isClose);
-            }}
-            className={`link ${isClose && "close"}`}
-            to="/"
-          >
+          <Link className="link" onClick={clickCerrarModal} to="/">
             <BsFillHouseFill /> Inicio
           </Link>
-          <Link className="link" to="nosotros">
+          <Link className="link" onClick={clickCerrarModal} to="nosotros">
             Nosotros
           </Link>
-          <Link className="link" to="contacto">
+          <Link className="link" onClick={clickCerrarModal} to="contacto">
             Contacto
           </Link>
-          <Link className="link" to="nuestro servicio">
+          <Link className="link" onClick={clickCerrarModal} to="nuestro servicio">
             Nuestro Servicio
           </Link>
         </div>

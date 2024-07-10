@@ -1,0 +1,58 @@
+@import "../../../styles/media-queries";
+
+.btn-burger-open {
+  font-size: 2.5rem;
+  overflow: visible;
+
+  @include tablet {
+    // display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include large {
+    display: none;
+  }
+  @include extralarge {
+    display: none;
+  }
+
+  &.btn-burger-open.open {
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+    @include large {
+      display: none;
+    }
+
+  }
+}
+
+.btn-burger-close {
+  font-size: 2.5rem;
+  overflow: visible;
+
+  &.btn-burger-close.close {
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
+    @include large {
+      display: none;
+    }
+    @include extralarge {
+      display: none;
+    }
+  }
+}
