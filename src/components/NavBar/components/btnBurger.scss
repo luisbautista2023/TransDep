@@ -30,6 +30,9 @@
     @include large {
       display: none;
     }
+    @include extralarge {
+      display: none;
+    }
 
   }
 }
