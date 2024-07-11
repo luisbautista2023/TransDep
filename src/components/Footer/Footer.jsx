@@ -21,8 +21,7 @@ const FooterAct = () => {
             <h3 className="direccion"><BsSignpostSplit/> Calle 47 #30A - 48 Urb Curinca</h3>
             <h3 className="direccion"><BsFillCloudSunFill /> SANTA MARTA COLOMBIA</h3>
             <h3 className="contact-telefono">
-              <span   className="contact"> <BsFillTelephoneFill/> CONTACTO ➡</span>314 286 1661 - 310
-              5120491
+              <span   className="contact"> <BsFillTelephoneFill/> CONTACTO ➡</span>310 5120491
             </h3>
           </div>
         </div>
